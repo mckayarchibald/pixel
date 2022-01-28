@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function Button({paintColor}) {
+export default function Pixel({paintColor}) {
   const [color, setColor] = useState('#FFFFFF');
 
   const handleClick = () => {
@@ -12,6 +12,6 @@ export default function Button({paintColor}) {
   }
 
   return (
-    <button style={{height: '25px', width: '25px', backgroundColor: `${color}`, border: '1px dotted #d4d4d4', color: `${color}`}} onClick={handleClick}>0</button>
+    <button style={{height: '32px', width: '32px', backgroundColor: `${color}`, border: '.5px dashed #dfdfdf', color: `${color}`}} onClick={handleClick}>0</button>
   )
 }
